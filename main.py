@@ -21,6 +21,6 @@ if __name__ == "__main__":
     myHtmlData= getData("https://www.mohfw.gov.in/")
     notifyMe("Covid-19 Updates", "Notification working")
     soup = BeautifulSoup(myHtmlData, 'html.parser')
-    print(soup)
-    
-
+    #print(soup.prettify)
+    for tr in soup.find_all('tbody')[0].find_all('tr'):
+        print(tr.getText())
