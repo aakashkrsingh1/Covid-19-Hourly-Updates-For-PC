@@ -35,7 +35,7 @@ if __name__ == "__main__":
         #print(itemList)
        for item in itemList[0:33]:
             dataList=item.split("\n")
-            print(dataList)
+            #print(dataList)
             if dataList[1] in states:
                 nTitle="Cases of Covid-19"
                 nText="State : "+dataList[1]+"\nTotal Confirmed cases* : "+dataList[2]+"\n Cured/Discharged/Migrated : "+dataList[3]+"\n Deaths : "+dataList[4]
